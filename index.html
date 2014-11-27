@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Data Layer: Simple</title>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<meta charset="utf-8">
+		<style>
+			html, body {
+				height: 100%;
+				margin: 0px;
+				padding: 0px
+			}
+			#map-canvas {
+				height: 60%;
+				width: 80%;
+				margin: 0px;
+				padding: 0px;
+				position: absolute;
+				left: 0px;
+			}
+			#highchart {
+				height: 40%;
+				width: 100%;
+				min-width: 310px;
+				position: absolute;
+				bottom: 0px;
+			}
+			#detial {
+				height: 60%;
+				width: 20%;
+				position: absolute;
+				right: 0px;
+			}
+			#title{
+				text-align:center;
+				padding: 10px;
+			}
+		</style>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+		<script src="http://code.highcharts.com/stock/highstock.js"></script>
+		<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+		<script src="ColorBar.js"></script>
+		<script src="main.js"></script>
+	</head>
+	<body>
+		<div id="map-canvas"></div>
+		<div id="detial">
+			<div id="title"></div>
+			<hr>
+			<div id="content"></div>
+		</div>
+		<div id="highchart"></div>
+	</body>
+	<script>
+	
+	</script>
+</html>
