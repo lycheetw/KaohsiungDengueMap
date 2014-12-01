@@ -18,12 +18,20 @@
 				position: absolute;
 				left: 0px;
 			}
-			#highchart {
+			#histogram {
 				height: 40%;
 				width: 100%;
 				min-width: 310px;
 				position: absolute;
 				bottom: 0px;
+			}
+			#myTabContent{
+				height: 85%;
+				width: 100%;
+			}
+			#myTabContent > div{
+				height: 100%;
+				width: 100%;
 			}
 			#detial {
 				height: 60%;
@@ -52,7 +60,14 @@
 			<hr>
 			<div id="content"></div>
 		</div>
-		<div id="highchart"></div>
+		<div id='histogram'>
+			<ul id='myTab' class='nav nav-tabs'>
+				<li class="active"><a href="#合計" data-toggle="tab">高雄市</a></li>
+			</ul>
+			<div id="myTabContent" class="tab-content">
+				<div class="tab-pane fade in active" id="合計"></div>
+			</div>
+		</div>
 	</body>
 	<script>
 	
