@@ -1,7 +1,7 @@
 $.ajaxSetup({async: false});
 
 var map;
-var week_index = 46
+var week_index = 48
 $.getJSON('DengueKH.json', function(data){
 	DengueKH = data
 });
@@ -37,6 +37,8 @@ function initialize(){
 		var TownName = event.feature.getProperty('TOWNNAME');
 		map.data.revertStyle();
 		map.data.overrideStyle(event.feature, {fillColor: 'white'});
+		$('#detial > #content').empty();
+		$('#detial > #content').append('<div>'+TownName+':'+DengueKH[TownName][week_index]+'</div>');
 	});
 
 	map.data.addListener('mouseout', function(event){
