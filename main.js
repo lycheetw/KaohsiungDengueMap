@@ -43,6 +43,7 @@ function initialize(){
 
 	map.data.addListener('mouseout', function(event){
 		map.data.revertStyle();
+		$('#detial > #content').empty();
 	});
 
 	map.data.addListener('click', function(event){
