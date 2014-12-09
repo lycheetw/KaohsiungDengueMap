@@ -87,7 +87,7 @@ function createStockChart(TownName){
 				point: {
 					events: {
 						click: function(){
-							$('#detial > #title').text('第' + (this.index+1) + '週(' + new Date(this.x).toLocaleDateString() + ')');
+							$('#detial > #title').text('第' + (this.index+1) + '週(' + new Date(this.x-1).toLocaleDateString() + ')');
 							week_index = this.index
 							town.forEach(function(value){
 								var key = value.getProperty('TOWNNAME');
