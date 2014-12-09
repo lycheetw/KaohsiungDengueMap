@@ -117,6 +117,7 @@ function closeTab(node){
 	var nodename = node.name;
 	node.parentNode.remove();
 	$('#'+nodename).remove();
+	$('#myTab a:first').tab('show') ;
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
